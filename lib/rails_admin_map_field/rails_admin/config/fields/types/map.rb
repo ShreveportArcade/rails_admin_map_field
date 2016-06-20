@@ -37,6 +37,16 @@ module RailsAdmin::Config::Fields::Types
       8
     end
 
+    # Default width of the map
+    register_instance_option(:default_width) do
+      300
+    end
+
+    # Default height of the map
+    register_instance_option(:default_height) do
+      200
+    end
+
     def dom_name
       @dom_name ||= "#{bindings[:form].object_name}_#{@name}_#{longitude_field}"
     end
