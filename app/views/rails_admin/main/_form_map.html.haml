@@ -10,7 +10,7 @@
       var myOptions = {
         zoom: #{field.default_zoom_level},
         center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.#{field.default_map_type}
       };
 
       var map = new google.maps.Map(document.getElementById("#{field.dom_name}"), myOptions);

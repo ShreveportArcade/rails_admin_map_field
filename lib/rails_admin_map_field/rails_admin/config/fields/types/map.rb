@@ -47,6 +47,10 @@ module RailsAdmin::Config::Fields::Types
       200
     end
 
+    register_instance_option(:default_map_type) do
+      "SATELLITE"
+    end
+
     def dom_name
       @dom_name ||= "#{bindings[:form].object_name}_#{@name}_#{longitude_field}"
     end
