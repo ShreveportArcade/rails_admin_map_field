@@ -2,7 +2,7 @@
 
 = javascript_tag do
   :plain
-    function init_map_field(){
+    window.init_map_field = function(){
     jQuery(function(){
       var marker = null;
       var latlng = new google.maps.LatLng(#{form.object.send(field.name) || field.default_latitude}, #{form.object.send(field.longitude_field) || field.default_longitude});
